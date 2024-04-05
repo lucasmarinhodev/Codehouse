@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+
+            <label for="rmasculino">masculino</label>
+            <input type="radio" name="genero" value="masculino" id="rmasculino">
+            <label for="rfeminino">feminino</span>
+            <input type="radio" name="genero" value="feminino" id="rfeminino">
+            <label for="routro">outro</span>
+            <input type="radio" name="genero" value="outro" id="routro">
+            <br>
+            <select nome="Tamanhos">
+                <option value="G">Grande</option>
+                <option value="M">Médio</option>
+                <option value="P">Pequeno</option>
+            </select>
+            <br>
+            <label for="nomeform">Nome:</label>
+            <input type="text" id="nomeform">
+            <br>
+        
+            <label for="sobre_nome">Sobrenome:</label>
+            <input type="text" id="nome_form">
+            <br>
+            <button>enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
