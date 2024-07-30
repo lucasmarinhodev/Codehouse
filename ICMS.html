@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Desconto</title>
+</head>
+<body>
+
+<script>
+    function obterPrecoOriginal() {
+        let precoOriginal = parseFloat(prompt("Insira o preço do produto:"));
+        return precoOriginal;
+    }
+
+    function obterPorcentagemDesconto() {
+        let porcentagemDesconto = parseFloat(prompt("Insira a porcentagem de desconto:"));
+        return porcentagemDesconto;
+    }
+
+    function calcularPrecoFinal(precoOriginal, porcentagemDesconto) {
+        let valorDesconto = (precoOriginal * porcentagemDesconto) / 100;
+        let precoFinal = precoOriginal - valorDesconto;
+        return precoFinal;
+    }
+
+    function calcularDesconto() {
+        let precoOriginal = obterPrecoOriginal();
+        let porcentagemDesconto = obterPorcentagemDesconto();
+        let precoFinal = calcularPrecoFinal(precoOriginal, porcentagemDesconto);
+        alert(`O preço final com desconto é: R$ ${precoFinal.toFixed(2)}`);
+    }
+
+    calcularDesconto();
+</script>
+
+</body>
+</html>
